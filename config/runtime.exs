@@ -28,8 +28,7 @@ config :nervous_bot, NervousBot.Repo,
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10")
 
 # Configure your missions
-config :nervous_bot, :missions,
-  ships: System.get_env("MISSION_SHIPS") |> String.split(",")
+config :nervous_bot, :missions, ships: System.get_env("MISSION_SHIPS") |> String.split(",")
 
 # Spacetraders configuration.
 config :nervous_bot, :spacetraders, api_token: System.get_env("SPACETRADERS_TOKEN")

@@ -45,3 +45,7 @@ npm-debug.log
 
 # Release directories.
 /rel/
+
+# Release via docker files.
+/Dockerfile
+/.dockerignore
